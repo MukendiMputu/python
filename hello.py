@@ -1,8 +1,8 @@
 print("Hello, world!")
 name = input("What's your name? ")
 
-print("Nice to meet you,", name)
-answer = input("Are you enjoying learning python?")
+print("Hi {}! Nice to meet you,".format(name))
+answer = input("So {}, are you enjoying learning python? ".format(name))
 
 if answer:
     print("Awesome!")
@@ -12,4 +12,4 @@ else:
 def say_hello():
     print("Hello!")
 
-say_hello()
+if __name__ == '__main__' : say_hello()
