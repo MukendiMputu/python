@@ -1,15 +1,23 @@
 print("Hello, world!")
-name = input("What's your name? ")
 
-print("Hi {}! Nice to meet you,".format(name))
-answer = input("So {}, are you enjoying learning python? ".format(name))
+def greet():
+    name = input("What's your name? ")
 
-if answer:
-    print("Awesome!")
-else:
-    print("Oh ok. You should think about alternatives then!")
+    print("Hi {}! Nice to meet you,".format(name))
+    answer = input("So {}, are you enjoying learning python? ".format(name))
 
-def say_hello():
-    print("Hello!")
+    if answer:
+        print("Awesome!")
+    else:
+        print("Oh ok. You should think about alternatives then!")
 
-if __name__ == '__main__' : say_hello()
+def say_hello(x):
+    print("x ist {}".format(x))
+    print(type(x))
+
+x = """
+    Multi-line
+    string
+"""
+
+if __name__ == '__main__' : say_hello(x)
