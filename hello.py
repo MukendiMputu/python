@@ -15,6 +15,9 @@ def say_hello(x):
     print("x ist {}".format(x))
     print(type(x))
 
+def convert_int():
+    print("something")
+
 x = """
     Multi-line
     string
