@@ -3,7 +3,7 @@ print("Hello, world!")
 def greet():
     name = input("What's your name? ")
 
-    print("Hi {}! Nice to meet you,".format(name))
+    print("Hi {x}! Nice to meet you,".format(name))
     answer = input("So {}, are you enjoying learning python? ".format(name))
 
     if answer:
