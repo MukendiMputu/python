@@ -1,5 +1,5 @@
 # importing library
-from decimal import *
+#from decimal import *
 
 
 # creating a variable to hold our blockchain
@@ -16,12 +16,13 @@ def get_last_blockchain_value():
 
 # getting the user input
 def get_user_input():
-    user_input = input('Enter a transaction:')
-    return Decimal(user_input)
+    user_input = input('Enter a transaction amount: ')
+    return float(user_input)
 
+# adding the value to the blockchain
+add_value(get_user_input())
+while True:
+    add_value(get_user_input())
 
-add_value(get_user_input())
-add_value(get_user_input())
-add_value(get_user_input())
-
-print(blockchain)
+    for block in blockchain:
+        print(block)
